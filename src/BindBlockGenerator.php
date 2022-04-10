@@ -43,7 +43,7 @@ $TTL    604800
         $rules = [];
         foreach ($this->addresses as  $domain) {
             $domain = Helper::idnTransform($domain);
-            $rules[] = "{$domain}       IN      A       {$this->configuration->getReplacedAddress()}";
+            $rules[] = "{$domain}\t\tIN\tA\t{$this->configuration->getReplacedAddress()}";
         }
         return $rules;
     }
