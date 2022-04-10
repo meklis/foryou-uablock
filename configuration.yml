@@ -1,11 +1,11 @@
 
-address_list_name: block
-path_mikrotik_rules: ./rules.conf
-path_bind_blocks: ./blocked.conf
-replace_to_address: 127.0.0.1
+address_list_name: block  #Имя адрес-листа блокировки на микроте
+path_mikrotik_rules: ./rules.conf # Путь, куда писать правила микрота
+path_bind_blocks: ./blocked.conf # Путь, куда писать конфиг бинд
+replace_to_address: 127.0.0.1 # Адрес, который подставлять при подмене в бинд
 advanced_block_ips:
 advanced_block_domains:
-excluded_block_networks:
+excluded_block_networks: # Здесь по-умолчанию подсети клаудфлаер. Если сайт резолвит с этими IP - их исключает из правил блокировки
   - 103.21.244.0/22
   - 103.22.200.0/22
   - 103.31.4.0/22

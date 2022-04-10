@@ -38,4 +38,5 @@ try {
     \Meklis\Blocks\LG::get()->info("Finished");
 } catch (\Throwable $e) {
     \Meklis\Blocks\LG::get()->critical($e->getMessage());
+    throw $e;
 }
