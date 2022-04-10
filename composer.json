@@ -1,0 +1,27 @@
+{
+  "name": "meklis/block-sites",
+  "description": "Scripts for generate configurations",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "meklis",
+      "email": "max.boyar.a@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "ext-yaml": "*",
+    "ext-intl": "*",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "meklis/ipv4-subnet-calculator": "dev-master",
+    "guzzlehttp/guzzle": "^7.4@dev",
+    "monolog/monolog": "2.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Meklis\\Blocks\\": "src"
+    }
+  }
+}
